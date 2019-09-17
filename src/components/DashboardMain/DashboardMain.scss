@@ -1,0 +1,54 @@
+.dash-wrapper {
+  max-width: 1280px;
+  min-height: 100vh;
+  background: #f0f0f0;
+  display: grid;
+  grid-template: 1fr / 1fr 5fr;
+  margin: 1rem auto;
+  .left-dash {
+    background: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .left-dash-item {
+      width: 3rem;
+      height: 3rem;
+      background: purple;
+    }
+  }
+  .right-dash {
+    // background: slategrey;
+    display: grid;
+    grid-template: repeat(48, 22px) / repeat(48, 22px);
+    div {
+      background: white;
+    }
+    .info {
+      grid-row: 2 / span 6;
+      grid-column: 2 / span 30;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 8px;
+    }
+    .personal-pie-ch {
+      grid-row: 2 / span 12;
+      grid-column: (2+30+3) / span 12;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    .market-ch {
+      grid-row: 16 / span 14;
+      grid-column: 2 / span 40;
+    }
+    .personal-ch {
+      grid-row: (16+14+4) / span 14;
+      grid-column: 2 / span 30;
+    }
+    .bulls {
+      grid-row: (16+14+2) / span 12;
+      grid-column: (2+30+4) / span 10;
+    }
+  }
+}
