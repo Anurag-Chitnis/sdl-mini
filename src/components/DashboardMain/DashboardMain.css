@@ -1,0 +1,103 @@
+.dash-wrapper {
+  max-width: 1280px;
+  min-height: 100vh;
+  background: #f0f0f0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template: 1fr / 1fr 5fr;
+  margin: 1rem auto;
+}
+
+.dash-wrapper .left-dash {
+  background: blueviolet;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dash-wrapper .left-dash .left-dash-item {
+  width: 3rem;
+  height: 3rem;
+  background: purple;
+}
+
+.dash-wrapper .right-dash {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (22px)[48];
+  -ms-grid-columns: (22px)[48];
+      grid-template: repeat(48, 22px)/repeat(48, 22px);
+}
+
+.dash-wrapper .right-dash div {
+  background: white;
+}
+
+.dash-wrapper .right-dash .info {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 6;
+  grid-row: 2 / span 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 30;
+  grid-column: 2 / span 30;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+}
+
+.dash-wrapper .right-dash .personal-pie-ch {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 12;
+  grid-row: 2 / span 12;
+  -ms-grid-column: 35;
+  -ms-grid-column-span: 12;
+  grid-column: 35/span 12;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dash-wrapper .right-dash .market-ch {
+  -ms-grid-row: 16;
+  -ms-grid-row-span: 14;
+  grid-row: 16 / span 14;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 40;
+  grid-column: 2 / span 40;
+}
+
+.dash-wrapper .right-dash .personal-ch {
+  -ms-grid-row: 34;
+  -ms-grid-row-span: 14;
+  grid-row: 34/span 14;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 30;
+  grid-column: 2 / span 30;
+}
+
+.dash-wrapper .right-dash .bulls {
+  -ms-grid-row: 32;
+  -ms-grid-row-span: 12;
+  grid-row: 32/span 12;
+  -ms-grid-column: 36;
+  -ms-grid-column-span: 10;
+  grid-column: 36/span 10;
+}
+/*# sourceMappingURL=DashboardMain.css.map */
